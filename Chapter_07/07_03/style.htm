@@ -2,10 +2,29 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+
 <title>embedded styles</title>
+<style>
+    h1 {
+        color:red;
+        font-weight: normal;
+    }
+    h2 {
+        color:darkgoldenrod;
+        font-weight: normal;
+    }
+    h2.interesting {
+        color:darkgreen;
+        font-weight: normal;
+    }
+</style>
 </head>
 <body>
 <h1>Using embedded styles</h1>
-<h2 style="color:red; font-weight: normal;">Style me using the "style" element.</h2>
+<h1 class="interesting">Using embedded styles</h1>
+<h2 class="interesting">Style me using the "style" element.</h2>
+<h2>Global styles apply to all relevant element selectors in the style element</h2>
+<h2>Global styles apply to all relevant element selectors in the style element</h2>
+<h2>Global styles apply to all relevant element selectors in the style element</h2>
 </body>
 </html>
