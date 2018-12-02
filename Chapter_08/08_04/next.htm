@@ -108,13 +108,24 @@
 <footer role="contentinfo">
   <p>&copy; <a href="http://www.lynda.com" title="lynda.com" target="_blank">lynda.com</a> | follow me and lynda.com on Twitter! <a href="https://twitter.com/jameswillweb" title="Follow me on Twitter">@jameswillweb</a> <a href="https://twitter.com/lynda" title="Follow lynda.com on Twitter">@lynda</a></p>
 </footer>
+    
 <script type="text/javascript">
 //tabbed panels
-
+    
+// declare globals to hold all the links and all the panel elements
+var tabLinks;
+var tabPanels;
+    
 window.onload=function() {
 	//set initial panel state
-	//listen for clicks on tabs
-}
+    // when page loads, grab li elements
+    tabLinks =
+document.getElementById("tabs").getElementsByTagName("li");
+    //Now get all the tab panel container divs    
+    tabPanels;
+document.getElementByID("containers").getElementByTagName("div");
+    //listen for clicks on tabs
+    }
 
 function displayPanel() {
 	//respond to tab clicks 
